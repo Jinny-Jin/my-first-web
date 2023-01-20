@@ -3,45 +3,47 @@
 <head>
   <title>편순일지 - 간편식품</title>
   <meta charset="utf-8">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK2VLHPF8L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EK2VLHPF8L');
-  </script>
-  <style>
-    a{
-        color:black;
-        text-decoration:none
-    }
-    h1{
-        text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="0.html">편순일지</a></h1>
-  <ol>
-    <li><a href="1.html">과자</a></li>
-    <li><a href="2.html" 
-            style="color:forestgreen;font-weight: bold;">간편식품</a></li>
-    <li><a href="3.html">FF</a></li>
-  </ol>
-  <h2>짱구는 카레대왕</h2>
-  <p>
-    GS25
-  </p>
-  <img src="curry.jpg" width="300" height="300">
-  <img src="real.jpg" width="300" height="300">
-  <p>
-    -구성품 별 것 없음주의
-    <br>-짱구씰 뜯는 재미가 쏠쏠하다
-    <br>-특유의 향신료향이 있어 호불호가 갈릴듯 싶다
-    <br>-4900원이라는 가격을 생각하면 1번 먹어보는 것으로 충분하다 생각한다
-  </p>
+  <h1>
+    <a href="0.html">편순일지</a>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body')
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+    }
+    else{
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+    }
+    ">
+  </h1>
+<div id="grid"> 
+    <ol>
+      <li><a href="1.html">과자</a></li>
+      <li><a href="2.html"
+        style="color:forestgreen; font-weight:bold;">간편식품</a></li>
+      <li><a href="3.html">FF</a></li>
+    </ol>
+    <div id="article">
+      <h2>짱구는 카레대왕</h2>
+      <p>
+        GS25
+      </p>
+        <img src="curry.jpg" width="300" height="300">
+        <img src="real.jpg" width="300" height="300">
+      <p>
+            -구성품 별 것 없음주의
+        <br>-짱구씰 뜯는 재미가 쏠쏠하다
+        <br>-특유의 향신료향이 있어 호불호가 갈릴듯 싶다
+        <br>-4900원이라는 가격을 생각하면 1번 먹어보는 것으로 충분하다 생각한다
+      </p>
+    </div>
+  </div>  
 
   <p>
     <div id="disqus_thread"></div>

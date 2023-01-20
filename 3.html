@@ -3,46 +3,47 @@
 <head>
   <title>편순일지 - FF</title>
   <meta charset="utf-8">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK2VLHPF8L"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-EK2VLHPF8L');
-  </script>
-  <style>
-    a{
-        color:black;
-        text-decoration:none
-    }
-    h1{
-        text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="0.html">편순일지</a></h1>
-  <ol>
-    <li><a href="1.html">과자</a></li>
-    <li><a href="2.html">간편식품</a></li>
-    <li><a href="3.html" 
-          style="color:forestgreen; font-weight:bold">FF</a></li>
-  </ol>
-  <h2>m&m popcorn</h2>
-    <p>
-      GS25
-    </p>
-  <img src="mm popcorn.jpg" width="300" height="300">
-  <p>
-    -<strong><u>초콜릿</u> 팝콘</strong>은 처음이라 굉장히 새롭다
-    <br>-달달구리 폭★발☆
-    <br>-초딩입맛 기준 짱맛도리임
-    <br>-<a href="https://www.amazon.ca/Coated-Popcorn-Drizzled-Chocolate-Non-GMO/dp/B08KXGV46N"
-    target="_blank"
-    title="m&mpopcorn 구입처">m&m popcorn</a>은편의점 과자치고 가격대는 있는 편이지만 찐m&m도 붙어있어 비싸다는 생각은 안든다
-  </p>
+  <h1><a href="0.html">편순일지</a>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+  }
+  else{
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+  }
+  ">
+  </h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">과자</a></li>
+      <li><a href="2.html">간편식품</a></li>
+      <li><a href="3.html" 
+            style="color:forestgreen; font-weight:bold">FF</a></li>
+    </ol>
+    <div id="article">
+      <h2>m&m popcorn</h2>
+        <p>
+          GS25
+        </p>
+      <img src="mm popcorn.jpg" width="300" height="300">
+      <p>
+        -<strong><u>초콜릿</u> 팝콘</strong>은 처음이라 굉장히 새롭다
+        <br>-달달구리 폭★발☆
+        <br>-초딩입맛 기준 짱맛도리임
+        <br>-<a href="https://www.amazon.ca/Coated-Popcorn-Drizzled-Chocolate-Non-GMO/dp/B08KXGV46N"
+        target="_blank"
+        title="m&mpopcorn 구입처">m&m popcorn</a>은편의점 과자치고 가격대는 있는 편이지만 찐m&m도 붙어있어 비싸다는 생각은 안든다
+      </p>
+    </div>
+  </div>
   <p>
 
     <div id="disqus_thread"></div>
