@@ -4,22 +4,13 @@
   <title>편순일지 - 과자</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1>
-    <a href="0.html">편순일지</a>
+    <a href="index.html">편순일지</a>
     <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value= 'day';
-    }
-      else{
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        this.value = 'night';
-      }
+      nightdayhandler(this);
     ">
   </h1>
     <div id="grid">
